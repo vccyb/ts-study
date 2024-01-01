@@ -59,3 +59,10 @@ const enum Color {
 
   console.log(Weekdays[3]); // Wednesday
 }
+
+
+{
+  interface myPartial<T> {
+    [K in keyof T]: T[K]
+  }
+}
